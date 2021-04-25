@@ -50,8 +50,7 @@ function pluck (obj, ...args) {
 
             if (isObject(arg)) {
                 const plucked = handleObject(arg, obj);
-                console.log(plucked);
-                console.log(arg);
+            
                 output = {...output, ...plucked};
             }
         });
@@ -75,8 +74,5 @@ function pluck (obj, ...args) {
     }
 };
 
-const data = {name: {first: {public: 'yes', value: "Alex"}}, ss: "SS", extra: {info: "warning", data: {}}};
 
-const plucked = pluck(data, {ss: true, extra: {info: true}});
-
-console.log(plucked);
+module.exports = pluck;
