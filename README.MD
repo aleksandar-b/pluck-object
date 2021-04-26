@@ -21,7 +21,7 @@ const data =  {
            streetNumber: "1",
          },
          phone: {
-           contryCode: "381"
+           contryCode: "381",
            areaCode: "011",
            primary: "11111111" 
          } 
