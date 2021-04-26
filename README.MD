@@ -24,6 +24,10 @@ const data =  {
            contryCode: "381",
            areaCode: "011",
            primary: "11111111" 
+         },
+         social: {
+           twitter: "https://twitter.com/example",
+           reddit: "https://reddit.com/example"
          } 
       },
     };
@@ -41,7 +45,8 @@ const result = pluck(data, {
       },
       phone: {
         primary: true
-      }
+      },
+      social: true
     } 
 });
 
@@ -56,7 +61,11 @@ console.log(result)
     },
     phone: {
       primary: "11111111"
-    } 
+    },
+    social: {
+      twitter: "https://twitter.com/example",
+      reddit: "https://reddit.com/example"
+    }  
   }
 }
 
