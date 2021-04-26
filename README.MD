@@ -28,6 +28,11 @@ const data =  {
          social: {
            twitter: "https://twitter.com/example",
            reddit: "https://reddit.com/example"
+         },
+         avatars: {
+           small: "",
+           medium: "",
+           large: ""
          } 
       },
     };
