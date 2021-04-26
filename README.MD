@@ -35,13 +35,13 @@ const data =  {
 const result = pluck(data, {
     name: true, 
     contact: { 
-        address: { 
-            zip: true, 
-            postCode: true 
-        },
-        phone: {
-            primary: true
-        }
+      address: { 
+        zip: true, 
+        postCode: true 
+      },
+      phone: {
+        primary: true
+      }
     } 
 });
 
