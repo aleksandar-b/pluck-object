@@ -4,10 +4,10 @@ https://rethinkdb.com/api/javascript/pluck
 
 ### Example
 
-const pluck = require('./index.js')
-
 #### object notation
 ```js
+const pluck = require('./index.js');
+
 const data =  {
       id: 1,
       name: "Bulbasaur",
