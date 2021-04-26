@@ -4,7 +4,6 @@ https://rethinkdb.com/api/javascript/pluck
 
 ### Example
 
-#### object notation
 ```js
 const pluck = require('./index.js');
 
@@ -23,6 +22,10 @@ const data =  {
          } 
       },
     };
+```
+
+#### object notation
+```js
 
 const result = pluck(data, {
     name: true, 
@@ -56,7 +59,7 @@ console.log(result)
 { name: 'Bulbasaur', id: 1 }
 ```
 
-### object and string notation combined
+#### object and string notation combined
 ```js
 const result = pluck(data, 'name', {
     contact: {
