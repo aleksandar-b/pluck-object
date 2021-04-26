@@ -2,7 +2,7 @@
 This is JavaScript implementation of RethinkDB pluck method.
 https://rethinkdb.com/api/javascript/pluck
 
-### Example
+### Setup
 
 ```js
 const pluck = require('./index.js');
