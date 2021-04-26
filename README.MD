@@ -18,7 +18,12 @@ const data =  {
            postCode: "1233",
            streetName: "St Winsent",
            streetType: "Avenue",
-           streetNumber: "1"
+           streetNumber: "1",
+         },
+         phone: {
+           contryCode: "381"
+           areaCode: "011",
+           primary: "11111111" 
          } 
       },
     };
@@ -33,6 +38,9 @@ const result = pluck(data, {
         address: { 
             zip: true, 
             postCode: true 
+        },
+        phone: {
+            primary: true
         }
     } 
 });
@@ -45,6 +53,9 @@ console.log(result)
     address: { 
       zip: '1323', 
       postCode: '1233' 
+    },
+    phone: {
+      primary: "11111111"
     } 
   }
 }
