@@ -74,26 +74,4 @@ function pluck (obj, ...args) {
     }
 };
 
-const data =  {
-      "id": 1,
-      "name": "Bulbasaur",
-      "img": "http://www.serebii.net/pokemongo/pokemon/001",
-      "contact": {
-         fullName: "Alex B",
-         address: {
-           zip: "1323",
-           postCode: "1233",
-           streetName: "St Winsent",
-           streetType: "Avenue",
-           streetNumber: "1"
-         } 
-      },
-    };
-
-const result = pluck(data, 'name', { contact: { address: { streetName: true } } }); 
-
-
-console.log(result)
-
-
 module.exports = pluck;
