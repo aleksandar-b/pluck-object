@@ -40,8 +40,7 @@ const result = pluck(data, {
     name: true, 
     contact: { 
       address: { 
-        zip: true, 
-        postCode: true 
+        zip: true
       },
       phone: {
         primary: true
@@ -56,8 +55,7 @@ console.log(result)
   name: 'Bulbasaur',
   contact: { 
     address: { 
-      zip: '1323', 
-      postCode: '1233' 
+      zip: '1323'
     },
     phone: {
       primary: "11111111"
